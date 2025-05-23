@@ -117,6 +117,22 @@ self‑assessment table like:
 
 ---
 
+## Relationship to Other Standards
+* ASDL is intended to complement, not replace, existing software development methodologies, quality standards (e.g., ISO/IEC 25010 for software product quality), or process models (e.g., CMMI).
+* Its specific focus is on classifying the degree of autonomy in the software engineering lifecycle, providing a common language for this particular dimension.
+* Users are encouraged to integrate ASDL concepts within their broader quality assurance and development frameworks.
+
+---
+
+## Versioning and Evolution
+* This ASDL specification follows semantic versioning (e.g., v1.0, v1.1, v2.0).
+* Major versions (e.g., v1.x to v2.x) introduce significant changes or conceptual shifts that may not be backward compatible.
+* Minor versions (e.g., v1.0 to v1.1) introduce backward-compatible clarifications, additions, or refinements.
+* Proposals for changes, new levels, or clarifications can be submitted via GitHub Issues for discussion. Significant changes will be incorporated into new minor or major versions after community review and consensus.
+* The version of the standard is indicated at the top of this document.
+
+---
+
 ## License (MIT)
 
 ---
@@ -128,4 +144,4 @@ self‑assessment table like:
 3. Sign your commits & ensure CI passes.
 4. By contributing you agree that your code/content is licensed MIT.
 
-Happy hacking! 🚀
+We look forward to your contributions.
