@@ -6,8 +6,9 @@
 
 **Version 1.0 – 23 May 2025**  
 **Authors**  
+• Valter Kungla - inital promt
 • ChatGPT (OpenAI o3) — original specification  
-• Valter Kungla  
+• Gemnini Jules - improvments  
 • Claude (Anthropic) — implementation guidance and practical examples
 
 ---
