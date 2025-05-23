@@ -1,17 +1,20 @@
 # Autonomous Software Development Levels (ASDL)
 
 > *A technology‑neutral standard for describing the maturity of autonomy in the
-> software‑engineering lifecycle – inspired by the SAE J3016 self‑driving‑car
+> software‑engineering lifecycle – inspired by the SAE J3016 self‑driving‑car
 > levels.*
 
-**Version 1.0 – 23 May 2025**  
-**Authors**  • ChatGPT (OpenAI o3) — original specification • Valter Kungla
+**Version 1.0 – 23 May 2025**  
+**Authors**  
+• ChatGPT (OpenAI o3) — original specification  
+• Valter Kungla  
+• Claude (Anthropic) — implementation guidance and practical examples
 
 ---
 
 ## Purpose
 
-ASDL offers a concise vocabulary (L0 → L5) for teams, vendors, researchers and
+ASDL offers a concise vocabulary (L0 → L5) for teams, vendors, researchers and
 regulators to communicate **how much of the software‑development process is
 handled autonomously by AI agents versus humans.**  The intent is to:
 
@@ -36,53 +39,53 @@ handled autonomously by AI agents versus humans.**  The intent is to:
 
 ## Detailed Level Definitions
 
-### **L0 – No Automation**
-* **Coding**  Human writes 100 % of source.
-* **Testing**  Manual or scripted by human.
-* **Architecture & Design**  Fully human.
-* **Deployment/Ops**  Triggered and monitored by humans.
-* **Oversight**  Intrinsic – human is the actor.
+### **L0 – No Automation**
+* **Coding**  Human writes 100 % of source.
+* **Testing**  Manual or scripted by human.
+* **Architecture & Design**  Fully human.
+* **Deployment/Ops**  Triggered and monitored by humans.
+* **Oversight**  Intrinsic – human is the actor.
 
-### **L1 – Assisted Development**
-* **Coding**  AI suggests tokens/lines; developer confirms.
-* **Testing**  Tools scaffold basic unit‑test templates.
-* **Code Review**  Linters/static‑analysis bots comment on style & obvious defects.
-* **Ops**  Rule‑based CI/CD; AI not trusted to merge or deploy.
+### **L1 – Assisted Development**
+* **Coding**  AI suggests tokens/lines; developer confirms.
+* **Testing**  Tools scaffold basic unit‑test templates.
+* **Code Review**  Linters/static‑analysis bots comment on style & obvious defects.
+* **Ops**  Rule‑based CI/CD; AI not trusted to merge or deploy.
 
-### **L2 – Partial Automation**
-* **Coding**  AI generates complete functions/modules on request.
-* **Testing**  AI proposes unit & happy‑path integration tests; dev curates.
-* **Architecture**  AI recommends patterns; human chooses.
-* **Deployment**  Pipeline can auto‑deploy to staging; prod gated by human.
-* **Oversight**  Human reviews every PR; AI cannot merge.
+### **L2 – Partial Automation**
+* **Coding**  AI generates complete functions/modules on request.
+* **Testing**  AI proposes unit & happy‑path integration tests; dev curates.
+* **Architecture**  AI recommends patterns; human chooses.
+* **Deployment**  Pipeline can auto‑deploy to staging; prod gated by human.
+* **Oversight**  Human reviews every PR; AI cannot merge.
 
-### **L3 – Conditional Automation**
-* **Scope**  AI agents execute multi‑step feature tasks (“add profile API”).
-* **Quality Loop**  Agents write code ➜ generate tests ➜ run ➜ fix until green.
-* **Code Review**  AI summarises changes; human approves/high‑level review.
-* **Deployment**  To prod with human sign‑off or policy‑based auto‑merge.
-* **Infra**  Agents provision resources via IaC within budget/policy.
-* **Fallback**  Human can halt/override at any step.
+### **L3 – Conditional Automation**
+* **Scope**  AI agents execute multi‑step feature tasks ("add profile API").
+* **Quality Loop**  Agents write code ➜ generate tests ➜ run ➜ fix until green.
+* **Code Review**  AI summarises changes; human approves/high‑level review.
+* **Deployment**  To prod with human sign‑off or policy‑based auto‑merge.
+* **Infra**  Agents provision resources via IaC within budget/policy.
+* **Fallback**  Human can halt/override at any step.
 
-### **L4 – High Automation**
-* **End‑to‑End Delivery**  Given a requirement, agents design, code, test,
+### **L4 – High Automation**
+* **End‑to‑End Delivery**  Given a requirement, agents design, code, test,
   document, and deploy.
-* **Release Engineering**  AI selects rollout strategy, monitors SLOs, auto‑
+* **Release Engineering**  AI selects rollout strategy, monitors SLOs, auto‑
   rolls back on anomalies.
-* **Self‑Healing**  Detects & patches most runtime issues without waiting for
+* **Self‑Healing**  Detects & patches most runtime issues without waiting for
   humans.
-* **Architecture**  Makes bounded architectural changes (e.g., splits
+* **Architecture**  Makes bounded architectural changes (e.g., splits
   microservice) respecting org constraints.
-* **Human Duty**  Define objectives, constraints & handle rare edge cases.
+* **Human Duty**  Define objectives, constraints & handle rare edge cases.
 
-### **L5 – Full Autonomy**
-* **AGI‑level Capability**  AI originates product ideas, performs research,
+### **L5 – Full Autonomy**
+* **AGI‑level Capability**  AI originates product ideas, performs research,
   architects novel systems, writes and maintains code indefinitely.
-* **Continuous Optimization**  Live‑experiments, auto‑tuning of cost vs.
+* **Continuous Optimization**  Live‑experiments, auto‑tuning of cost vs.
   latency, dynamic infra migration.
-* **Governance**  Human provides only strategic/ethical guard‑rails; routine
+* **Governance**  Human provides only strategic/ethical guard‑rails; routine
   development & ops are self‑governed.
-* **Accountability Mechanisms**  AI logs rationale, proofs, and audit trails for
+* **Accountability Mechanisms**  AI logs rationale, proofs, and audit trails for
   regulatory or ethical scrutiny.
 
 ---
@@ -100,14 +103,14 @@ self‑assessment table like:
 | **Human‑free production deploy**      |    |    |    |    | ✔️ | ✔️ |
 | AI sets its **own** development goals |    |    |    |    |    | ✔️ |
 
-> *Tip – include proof links (demo videos, audit logs) for each ✔️ in real
+> *Tip – include proof links (demo videos, audit logs) for each ✔️ in real
 > assessments.*
 
 ---
 
 ## Road‑map Guidance
 
-1. **Inventory today’s tooling** – map each to ASDL levels.
+1. **Inventory today's tooling** – map each to ASDL levels.
 2. **Define risk appetite** – higher autonomy ⇒ stronger safety nets
    (formal verification, RLAIF, guard‑rails).
 3. **Increment progressively** – pilot L2 in low‑risk repos before aiming for
@@ -145,3 +148,13 @@ self‑assessment table like:
 4. By contributing you agree that your code/content is licensed MIT.
 
 We look forward to your contributions.
+
+## Complementary Documentation
+
+This repository includes additional resources to support ASDL implementation:
+
+- **[Implementation Guide](IMPLEMENTATION_GUIDE.md)** — Practical guidance for measuring and implementing ASDL levels, including metrics, risk management, and tooling recommendations
+- **[Assessment Template](ASSESSMENT_TEMPLATE.md)** — Comprehensive self-assessment questionnaire for determining current ASDL level and planning progression
+- **[Examples and Use Cases](EXAMPLES_AND_USE_CASES.md)** — Real-world scenarios demonstrating each ASDL level across different industries and contexts
+
+These resources complement the core specification and provide actionable guidance for organizations adopting autonomous software development practices.
