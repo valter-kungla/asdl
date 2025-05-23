@@ -153,10 +153,10 @@ This repository includes additional resources to support ASDL implementation:
 - **[Assessment Template](ASSESSMENT_TEMPLATE.md)** — Comprehensive self-assessment questionnaire for determining current ASDL level and planning progression
 - **[Examples and Use Cases](EXAMPLES_AND_USE_CASES.md)** — Real-world scenarios demonstrating each ASDL level across different industries and contexts
 
-**Authors**  
+These resources complement the core specification and provide actionable guidance for organizations adopting autonomous software development practices.
+
+## Authors
 * Valter Kungla - inital promt
 * ChatGPT (OpenAI o3) — original specification  
 * Gemnini Jules - improvments  
 * Claude (Anthropic) — implementation guidance and practical examples
-
-These resources complement the core specification and provide actionable guidance for organizations adopting autonomous software development practices.
