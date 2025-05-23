@@ -5,11 +5,6 @@
 > levels.*
 
 **Version 1.0 – 23 May 2025**  
-**Authors**  
-• Valter Kungla - inital promt
-• ChatGPT (OpenAI o3) — original specification  
-• Gemnini Jules - improvments  
-• Claude (Anthropic) — implementation guidance and practical examples
 
 ---
 
@@ -157,5 +152,11 @@ This repository includes additional resources to support ASDL implementation:
 - **[Implementation Guide](IMPLEMENTATION_GUIDE.md)** — Practical guidance for measuring and implementing ASDL levels, including metrics, risk management, and tooling recommendations
 - **[Assessment Template](ASSESSMENT_TEMPLATE.md)** — Comprehensive self-assessment questionnaire for determining current ASDL level and planning progression
 - **[Examples and Use Cases](EXAMPLES_AND_USE_CASES.md)** — Real-world scenarios demonstrating each ASDL level across different industries and contexts
+
+**Authors**  
+* Valter Kungla - inital promt
+* ChatGPT (OpenAI o3) — original specification  
+* Gemnini Jules - improvments  
+* Claude (Anthropic) — implementation guidance and practical examples
 
 These resources complement the core specification and provide actionable guidance for organizations adopting autonomous software development practices.
